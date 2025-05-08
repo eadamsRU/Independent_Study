@@ -1,0 +1,41 @@
+----------------------------------------------Objective Summary----------------------------------------------
+This study examines whether the musical characteristics of popular spotify tracks specifically tempo, valence, energy, and danceability vary across European countries in a meaningful way.
+Using public Kaggle Spotify datasets, daily track charts from multiple European countries were analyzed using Python for data processing, statistical testing, and visualization.
+
+----------------------------------------------Hypotheses & Statistical Foundations----------------------------------------------
+MY hypothesis was to see if there was any coorelation between countries where they have high danceability/high energy songs appearing in their top charts for a country,
+and that specific countries economy market close on that day doing well. 
+
+Then to also test and see if there is the opposite occurence happening as well. 
+
+When songs are not as energetic or have a high danceability score, is that countries market doing poorly. Trying to see if there is any relationship between these separate variables. 
+
+----------------------------------------------Methods Used----------------------------------------------
+Data was grouped by snapshot_date, country, and rank/popularity.
+
+Track characteristics (e.g., tempo, valence) were averaged by day or by top/bottom-ranked tracks.
+
+Country level aggregations created a way to analyze against the spotify datasets.
+
+Visualizations such as line charts, scatter plots, dual-axis charts, and regression plots were used to examine patterns and relationships. (Mostly focusing on energy and danceability)
+
+----------------------------------------------Findings----------------------------------------------
+Dual-axis charts comparing stock market close prices and energy and danceability of Spotify tracks showed that music characteristics can fluctuate in sync with economic indicators.
+
+Initial regressions indicate moderate to strong correlations between valence and tempo in countries with higher GDP or happiness scores, especially in more socially expressive countries.
+
+Daily subsetting (top 10 vs bottom 10 tracks) revealed that top tracks consistently have higher valence and energy, particularly in Western European countries.
+
+Temporal heatmaps and scatter plots showed clustering of high-danceability and high-popularity tracks in certain countries.
+
+----------------------------------------------Conclusion & Interpretation----------------------------------------------
+The findings support there is a relationship between these variables to support these claims:
+
+There are measurable differences in spotify characteristics across countries.
+
+Higher GDP and happiness scores appear to correlate with faster, happier, more energetic tracks being popular.
+
+This supports the idea that music reflects broader national sentiment—people in happier or more prosperous countries may favor upbeat music, which in turn could reinforce mood, celebration, and overall wellbeing.
+
+----------------------------------------------Future Developments----------------------------------------------
+I plan to do more with this by taking a look into specific countries on an individual analysis and also to subset by looking at specific genres and seeing if specific genres are getting more streams in prosperous times in relation to the countries economy wellbeing.
